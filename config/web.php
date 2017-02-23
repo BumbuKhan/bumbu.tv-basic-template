@@ -44,6 +44,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '/movies/<id:\d+>' => 'movies/show-movie',
             ],
         ],
 

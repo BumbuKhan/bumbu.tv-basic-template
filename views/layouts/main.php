@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use yii\helpers\Url;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
@@ -24,7 +25,7 @@ AppAsset::register($this);
                 <!--header__logo start-->
                 <div class="one-fifth column">
                     <div class="header__logo pt-2">
-                        <a href="http://bumbu.tv"><b>BUMBU.TV</b> <sup>&beta;</sup></a>
+                        <a href="<?=Url::base(true)?>"><b>BUMBU.TV</b> <sup>&alpha;</sup></a>
                     </div>
                 </div>
                 <!--header__logo   end-->

@@ -1,3 +1,8 @@
+<?php
+use yii\helpers\Url;
+
+?>
+
 <!--moovie-list start-->
 <section class="movie-list">
     <!--movie-list-header start-->
@@ -34,7 +39,7 @@
                     <div class="single-column">
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
-                            <a href="http://bumbu.tv/view.html" target="_blank">
+                            <a href="<?=Url::toRoute(['movies/show-movie', 'id' => 123])?>">
                                 <img src="<?=Yii::getAlias('@web/web/assets/')?>img/1.jpg" class="img-responsive js-tilt" alt="">
                             </a>
                             <div class="movie-list__item-desc">
