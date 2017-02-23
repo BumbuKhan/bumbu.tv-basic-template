@@ -2,7 +2,6 @@
 use yii\helpers\Html;
 use app\assets\AppAsset;
 
-
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -57,7 +56,7 @@ AppAsset::register($this);
     </header>
     <!--header   end-->
 
-    <?=$content?>
+    <?= $content ?>
 
     <!--footer start-->
     <footer class="footer">
