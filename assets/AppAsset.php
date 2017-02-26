@@ -12,12 +12,15 @@ class AppAsset extends AssetBundle
         'css/font-awesome.min.css',
         'css/primer.css',
         'css/owl.carousel.min.css',
+        'css/jquery.custom-scrollbar.css',
         'css/app.min.css',
     ];
     public $js = [
         'js/jquery-3.1.1.min.js',
         'js/tilt.jquery.min.js',
         'js/owl.carousel.min.js',
+        'js/jquery.custom-scrollbar.min.js',
+        'js/video.min.js',
         'js/app.js',
     ];
     public $depends = [];

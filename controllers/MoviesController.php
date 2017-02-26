@@ -8,8 +8,13 @@ use app\controllers\CommonController;
 
 class MoviesController extends CommonController
 {
-    public function actionShowMovie()
+    public function actionViewMovie()
     {
         return $this->render('view_movie');
+    }
+
+    public function actionViewSeries()
+    {
+        return $this->render('view_series');
     }
 }

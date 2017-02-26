@@ -1,37 +1,38 @@
 <?php
-use app\assets\ViewMovieAsset;
+use yii\helpers\Url;
+use app\assets\VideoPlayerAsset;
 
-ViewMovieAsset::register($this);
+VideoPlayerAsset::register($this);
 ?>
 
-<!--movie-view start-->
-<section class="movie-view">
+<!--movie-details start-->
+<section class="movie-details">
     <div class="container">
         <div class="columns">
             <div class="single-column">
-                <!--movie-view__description start-->
-                <div class="movie-view__description clearfix" style="background-image: url('<?=Yii::getAlias('@web/web/assets/')?>img/1-blur.jpg')">
-                    <div class="movie-view__description-poster">
+                <!--movie-details__description start-->
+                <div class="movie-details__description clearfix" style="background-image: url('<?=Yii::getAlias('@web/web/assets/')?>img/1-blur.jpg')">
+                    <div class="movie-details__description-transparent-bg"></div>
+
+                    <div class="movie-details__description-poster">
                         <img src="<?=Yii::getAlias('@web/web/assets/')?>img/1.jpg" class="img-responsive" alt="">
                         <button class="btn btn-block btn-primary js-play-btn">Watch</button>
                     </div>
-                    <div class="movie-view__description-info">
+                    <div class="movie-details__description-info">
                         <table>
                             <tr>
                                 <td>
-                                    <h1 class="movie-view__description-title">Обитель зла</h1>
-                                    <div class="movie-view__description-data">
+                                    <h1 class="movie-details__description-title">Обитель зла</h1>
+                                    <div class="movie-details__description-data">
                                         <span>120 min</span>
                                         <span>August 2016</span>
                                         <span>Fantasy, Fiction, Comedy</span>
                                     </div>
-                                    <p class="movie-view__description-text">
+                                    <p class="mb-0">
                                         <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci
                                             animi cupiditate deserunt fugit, molestias repudiandae sapiente ullam?
                                             Aspernatur aut in iure labore quisquam. Aliquam aliquid consequuntur
-                                            dolorum magnam qui?
-                                        </small>
-                                        <small>A alias aliquid delectus et, facere illo labore molestias neque omnis
+                                            dolorum magnam qui? A alias aliquid delectus et, facere illo labore molestias neque omnis
                                             qui sed, vitae? Architecto asperiores aut eius esse excepturi harum ipsa
                                             iste maiores mollitia, provident, sequi similique unde voluptate?
                                         </small>
@@ -40,14 +41,13 @@ ViewMovieAsset::register($this);
                             </tr>
                         </table>
                     </div>
-                    <div class="movie-view__description-transparent-bg"></div>
                 </div>
-                <!--movie-view__description   end-->
+                <!--movie-details__description   end-->
             </div>
         </div>
     </div>
 </section>
-<!--movie-view   end-->
+<!--movie-details   end-->
 
 <!--video-player start-->
 <div class="video-player">

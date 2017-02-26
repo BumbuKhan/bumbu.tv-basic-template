@@ -4,7 +4,7 @@ namespace app\assets;
 
 use yii\web\AssetBundle;
 
-class ViewMovieAsset extends AssetBundle
+class VideoPlayerAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web/web/assets/';

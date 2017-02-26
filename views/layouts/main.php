@@ -12,6 +12,9 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <script>
+        var translateApiUrl = '<?=Url::toRoute(['translate/index'], true)?>';
+    </script>
     <?php $this->head() ?>
 </head>
 <body>

@@ -39,7 +39,7 @@ use yii\helpers\Url;
                     <div class="single-column">
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
-                            <a href="<?=Url::toRoute(['movies/show-movie', 'id' => 123])?>">
+                            <a href="<?=Url::toRoute(['movies/view-movie', 'id' => 123])?>">
                                 <img src="<?=Yii::getAlias('@web/web/assets/')?>img/1.jpg" class="img-responsive js-tilt" alt="">
                             </a>
                             <div class="movie-list__item-desc">
@@ -412,7 +412,7 @@ use yii\helpers\Url;
                         <!--series-list__item start-->
                         <div class="series-list__item js-series-item"
                              style="background: linear-gradient(to bottom, #4F5B67, #A0A9B0);">
-                            <a href="#">
+                            <a href="<?=Url::toRoute(['movies/view-series', 'id' => '123'])?>">
                                 <span class="series-list__item-title">MR. Robot</span>
                                 <span class="series-list__item-genres">Action, History, Fantasy</span>
 
