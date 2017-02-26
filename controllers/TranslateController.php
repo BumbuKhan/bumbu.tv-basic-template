@@ -25,7 +25,7 @@ class TranslateController extends CommonController
             Yii::$app->end();
         }
 
-        $query = $request->get('q');
+        $query = $request->post('q');
 
         if (empty($query) || !is_string($query)) {
             $response_data['message'] = 'Incorrect param, query must be a string';

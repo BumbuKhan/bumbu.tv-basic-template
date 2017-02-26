@@ -14,6 +14,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <script>
         var translateApiUrl = '<?=Url::toRoute(['translate/index'], true)?>';
+        var _csrf = '<?=Yii::$app->request->csrfToken?>';
     </script>
     <?php $this->head() ?>
 </head>
