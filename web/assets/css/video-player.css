@@ -1,0 +1,40 @@
+.s-node.active {
+    background-color: #52719F;
+}
+
+.s-node, .s-node-wr {
+    display: inline-block;
+}
+
+.s-node-wr {
+    position: relative;
+}
+
+.trans-wr {
+    position: absolute;
+    background-color: #212121;
+    color: #999;
+    min-height: 100px;
+    width: 250px;
+    bottom: 20px;
+    padding: 10px 50px 10px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.trans-wr .btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.s-orig, .s-trans{
+    display: block !important;
+}
+
+.s-trans{
+    margin-top: 5px;
+    color: #FFCC66 !important;;
+}

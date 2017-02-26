@@ -37,64 +37,6 @@ class TranslateController extends CommonController
 
         $translate = json_decode(file_get_contents($url_to_request));
 
-        /*
-         * {
-           "sentences":[
-              {
-                 "trans":"интересно",
-                 "orig":"interesting",
-                 "backend":1
-              }
-           ],
-           "dict":[
-              {
-                 "pos":"adjective",
-                 "terms":[
-                    "интересный",
-                    "занятный"
-                 ],
-                 "entry":[
-                    {
-                       "word":"интересный",
-                       "reverse_translation":[
-                          "interesting",
-                          "sapid",
-                          "readable",
-                          "cunning",
-                          "nutty",
-                          "sipid"
-                       ],
-                       "score":0.16842748
-                    },
-                    {
-                       "word":"занятный",
-                       "reverse_translation":[
-                          "amusing",
-                          "interesting"
-                       ],
-                       "score":0.00010722029
-                    }
-                 ],
-                 "base_form":"interesting",
-                 "pos_enum":3
-              }
-           ],
-           "src":"en",
-           "confidence":1,
-           "ld_result":{
-              "srclangs":[
-                 "en"
-              ],
-              "srclangs_confidences":[
-                 1
-              ],
-              "extended_srclangs":[
-                 "en"
-              ]
-           }
-        }
-         * */
-
         if (!empty($translate)) {
             $response_data['success'] = true;
             $response_data['message'] = 'Translated';
