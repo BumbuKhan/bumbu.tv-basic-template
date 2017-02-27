@@ -1,0 +1,1 @@
+this is the view for mobile screen
