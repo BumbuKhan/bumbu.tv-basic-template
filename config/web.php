@@ -50,6 +50,10 @@ $config = [
             ],
         ],
 
+        'devicedetect' => [
+            'class' => 'alexandernst\devicedetect\DeviceDetect'
+        ],
+
     ],
     'params' => $params,
     'aliases' => $aliases,

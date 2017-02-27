@@ -10,6 +10,7 @@ class SiteController extends CommonController
 {
     public function actionIndex()
     {
+        //var_dump(Yii::$app->devicedetect->isMobile());
         return $this->render('index');
     }
 }
